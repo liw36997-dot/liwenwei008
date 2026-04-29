@@ -1,0 +1,56 @@
+liwenwei008 使用教程（文档版）
+
+一、仓库说明
+当前仓库是一个空模板（仅包含 .gitkeep），适合作为新项目的起点。
+
+二、开始使用
+1) 克隆仓库
+   git clone <your-repo-url>
+   cd liwenwei008
+
+2) 初始化目录（示例）
+   mkdir -p src tests docs
+   cat > src/main.py <<'PY'
+   print("Hello, liwenwei008!")
+   PY
+
+三、分支开发流程
+1) 创建功能分支
+   git checkout -b feat/init-project
+
+2) 日常开发
+   - 在 src/ 中开发功能
+   - 在 tests/ 中补充测试
+   - 小步提交，保持提交语义清晰
+
+3) 常用命令
+   git status
+   git add .
+   git commit -m "feat: add xxx"
+
+四、推送与协作
+1) 推送分支
+   git push -u origin feat/init-project
+
+2) 发起 Pull Request 建议包含
+   - 变更背景
+   - 具体改动
+   - 测试结果
+   - 风险与回滚方案
+
+五、最小可运行示例（Python）
+文件：src/main.py
+
+def main():
+    print("Hello from liwenwei008")
+
+if __name__ == "__main__":
+    main()
+
+运行命令：
+python3 src/main.py
+
+六、后续建议
+- 补充项目说明（目标、架构、模块图）
+- 增加 CI（例如 GitHub Actions）
+- 增加 CONTRIBUTING 规范协作流程
